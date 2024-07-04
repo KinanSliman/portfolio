@@ -26,13 +26,14 @@ function App() {
       </div>
       <div className="introductionText">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          When marimba rhythms start to play Dance with me, make me sway Like a
+          lazy ocean hugs the shore Hold me close, sway me more Like a flower
+          bending in the breeze Bend with me, sway with ease When we dance, you
+          have a way with me Stay with me, sway with me Other dancers may be on
+          the floor Dear, but my eyes will see only you Only you have that magic
+          technique When we sway, I go weak I can hear the sounds of violins
+          Long before it begins Make me thrill as only you know how Sway me
+          smooth, sway me now
         </p>
       </div>
 
@@ -76,6 +77,14 @@ function App() {
               <li>Elliptic Curve Digital Signature Algorithm</li>
             </ul>
           </div>
+          <div className="projectLinks">
+            <a href="https://www.youtube.com/watch?v=8FD0U1Xxr-c">
+              <p>Video Demo</p>
+            </a>
+            <a href="https://github.com/KinanSliman/payment-system-using-blockchain">
+              <p>GitHub</p>
+            </a>
+          </div>
         </div>
         <div className="project">
           <h3># Shampoo Ecommerce</h3>
@@ -90,16 +99,34 @@ function App() {
               <li>Express</li>
             </ul>
           </div>
+          <div className="projectLinks">
+            <a href="https://shampoo-ecommercee.onrender.com/">
+              <p>Live Demo</p>
+            </a>
+            <a href="https://github.com/KinanSliman/Shampoo-Ecommerce">
+              <p>GitHub</p>
+            </a>
+          </div>
         </div>
         <div className="project">
           <h3># Data Scientist Portfolio</h3>
-          <p>a portfolio for my brother, to show his skills</p>
+          <p>
+            a portfolio for my brother, to show his skills in data analytics
+          </p>
           <div className="skills">
             <ul>
               <li>HTML</li>
               <li>SCSS</li>
               <li>Javascript</li>
             </ul>
+          </div>
+          <div className="projectLinks">
+            <a href="https://w-sliman.github.io/portfolio/">
+              <p>Live Demo</p>
+            </a>
+            <a href="https://github.com/w-sliman/portfolio">
+              <p>GitHub</p>
+            </a>
           </div>
         </div>
       </div>
