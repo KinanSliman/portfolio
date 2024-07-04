@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    //background-color: rgb(15 23 42);
+    background-color: rgb(18, 46, 11);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.app{
+    margin: 1rem;
+    //border: 1px solid magenta;
+    h1{
+        color: rgb(239, 243, 247);
+        font-size: 1.4rem; 
+        text-shadow: 3px 1px 5px rgba(167,130,130,0.6);
+    }
+    h2{
+        color: rgb(218, 227, 235);
+        margin-top: 0.8rem;
+        text-shadow: 3px 1px 5px rgba(167,130,130,0.6);
+    }
+    p{
+        color: rgb(218, 227, 235);
+        margin-top: 0.3rem;
+    }
+    .skills{
+    width: 95%;
+        ul{
+            li{
+                color: rgb(230, 17, 17);
+                list-style-type: none;
+                display: inline-block;
+                margin: 0.4rem;
+                padding:0.2rem;
+                border-radius: 5px;
+                //border: 1px solid magenta;
+                background-color: aliceblue;
+                font-size: 0.8rem;
+                font-weight: 700;
+                box-shadow: 4px 3px 6px rgba(253, 38, 224, 0.6);
+
+                &:hover{
+                    background-color: black;
+                    color: yellow;
+                    box-shadow: 4px 3px 6px rgba(248, 244, 19, 0.6);
+                    //font-size: 0.9rem;
+                }
+            }
+        }
+    }
+    .introductionText{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        p{
+            width: 92%;
+            text-align: justify;
+            text-shadow: 3px 1px 5px rgba(167,130,130,0.6);
+           // border-bottom: 1px solid white;
+        }
+    }
+    .links{
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            width: 2.6rem;
+            height: auto;
+            border-radius: 20px;
+        }
+        .githubLogoimg{
+            width: 2rem;
+            //border: 1px solid magenta;
+        }
+    }
+    .education{
+        margin-top: 2rem;
+        border-bottom: 1px solid white;
+        .educationLevel{
+            //border: 1px solid magenta;
+            margin-top: 0.4rem;
+            padding: 0.3rem;
+            h4{
+                color: rgb(255, 252, 252);
+                font-size: 1rem;
+                &:hover{
+                    color: yellow;
+                }
+            }
+            p{
+                font-size: 0.8rem;
+            }
+        }
+    }
+    .projects{
+        margin-top: 2rem;
+        width: 95%;
+        .project{
+            margin-top: 0.4rem;
+            padding: 0.3rem;
+            h3{
+                margin-top: 0.6rem;
+                color: rgb(115, 214, 106);
+                font-size: 1.2rem;
+            }
+            p{
+                margin-top: 0.5rem;
+                font-size: 1rem;
+                text-align: justify;
+            }
+        }
+    }
+    .sayHello{
+        margin-top: 3rem;
+        p{
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        label{
+            color: rgb(245, 239, 239);
+        }
+        input{
+            margin: 1rem;
+            padding: 0.3rem;
+            width: 90%;
+            border: none;
+            font-size: 1rem;
+            height: 2.8rem;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 4px 3px 6px rgba(253, 38, 224, 0.6);
+        }
+        .inputText{
+            margin: 1rem;
+            padding: 1rem;
+            width: 90%;
+            font-size: 1rem;
+            height: 25vh;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 4px 3px 6px rgba(253, 38, 224, 0.6);
+        }
+        button{
+            border: none;
+            width: 12rem;
+            padding: 0.5rem 1.1rem 0.5rem 1.1rem;
+            border-radius: 10px;
+            color: rgb(48, 51, 44);
+            background-color: rgb(184, 194, 174);
+            font-size: 1rem;
+            font-weight: 600;
+            box-shadow: 4px 3px 6px rgba(253, 38, 224, 0.6);
+            margin: 0 auto;
+            &:hover{
+                background-color: rgb(151, 167, 136);
+                color: rgb(35, 36, 33);
+            }
+        }
+    }
+}
