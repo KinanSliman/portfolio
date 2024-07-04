@@ -1,3 +1,4 @@
+import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
 function ContactForm() {
@@ -40,7 +41,7 @@ function ContactForm() {
           Send message
         </button>
       </form>
-      {state.errors.length > 0 && (
+      {state.errors && state.errors.length > 0 && (
         <p className="error">
           Failed to send the message. Please try again later.
         </p>
