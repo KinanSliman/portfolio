@@ -11,8 +11,8 @@ function ContactForm() {
   return (
     <div className="sayHello">
       <form onSubmit={handleSubmit}>
-        <p>If you reached here, you are welcomed to contact me</p>
-        <label htmlFor="email">Enter Your Email</label>
+        <p>I am happy to hear from you</p>
+        <label htmlFor="email">Enter Your Email:</label>
         <input
           id="email"
           type="email"
@@ -22,7 +22,7 @@ function ContactForm() {
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
 
-        <label htmlFor="message">Enter Your Message</label>
+        <label htmlFor="message">Enter Your Message:</label>
         <textarea
           className="inputText"
           id="message"
