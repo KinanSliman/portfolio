@@ -19,7 +19,7 @@ body {
   font-size: 1.4rem;
   text-shadow: 3px 1px 5px rgba(167, 130, 130, 0.6);
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 599px) {
   .app h1 {
     font-size: 1.6rem;
   }
@@ -30,7 +30,7 @@ body {
   font-size: 1.5rem;
   text-shadow: 3px 1px 5px rgba(167, 130, 130, 0.6);
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 599px) {
   .app h2 {
     font-size: 1.7rem;
   }
@@ -40,7 +40,7 @@ body {
   margin-top: 0.3rem;
   font-size: 1rem;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 599px) {
   .app p {
     font-size: 1.2rem;
   }
@@ -65,12 +65,12 @@ body {
   color: yellow;
   box-shadow: 4px 3px 6px rgba(248, 244, 19, 0.6);
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 599px) {
   .app .skills ul li {
     font-size: 0.93rem;
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 599px) {
   .app .skills {
     width: 100%;
     display: flex;
@@ -87,7 +87,7 @@ body {
   text-align: justify;
   text-shadow: 3px 1px 5px rgba(167, 130, 130, 0.6);
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 599px) {
   .app .introductionText p {
     width: 89%;
   }
@@ -121,7 +121,7 @@ body {
 .app .education .educationLevel h4:hover {
   color: yellow;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 599px) {
   .app .education .educationLevel h4 {
     font-size: 1.2rem;
   }
@@ -129,7 +129,7 @@ body {
 .app .education .educationLevel p {
   font-size: 0.8rem;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 599px) {
   .app .education .educationLevel p {
     font-size: 1rem;
   }
@@ -150,7 +150,7 @@ body {
   text-shadow: 4px 3px 6px rgba(199, 201, 78, 0.6);
   font-size: 1.2rem;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 599px) {
   .app .projects .project h3 {
     font-size: 1.3rem;
   }
@@ -160,7 +160,7 @@ body {
   font-size: 1rem;
   text-align: justify;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 599px) {
   .app .projects .project p {
     font-size: 1.1rem;
   }
@@ -179,7 +179,7 @@ body {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 599px) {
   .app .sayHello label {
     font-size: 1.1rem;
   }

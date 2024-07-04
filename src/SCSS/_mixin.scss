@@ -1,5 +1,5 @@
 @mixin screenTablet{
-    @media screen and (min-width: 600px){
+    @media screen and (min-width: 599px){
         @content;
     }
 }
