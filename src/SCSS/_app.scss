@@ -5,7 +5,7 @@
 }
 body{
     //background-color: rgb(15 23 42);
-    background-color: rgb(18, 46, 11);
+    background-color: $backgroundColor;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .app{
@@ -19,50 +19,50 @@ body{
     }
     
     h1{
-        color: rgb(239, 243, 247);
-        font-size: 1.4rem; 
-        text-shadow: 3px 1px 5px rgba(51, 44, 44, 0.6);
+        color: $headingColor;
+        font-size: $bigFont; 
+        //text-shadow: 3px 1px 5px rgba(51, 44, 44, 0.6);
         @include screenTablet{
-            font-size: 1.6rem; 
+            font-size: $bigFont; 
         }
     }
     h2{
-        color: rgb(218, 227, 235);
+        color: $headingColor;
         margin-top: 0.8rem;
-        font-size: 1.5rem;
-        text-shadow: 3px 1px 5px rgba(167,130,130,0.6);
+        font-size: $bigFont;
+        //text-shadow: 3px 1px 5px rgba(212, 112, 112, 0.4);
         @include screenTablet{
-            font-size: 1.7rem; 
+            font-size: $bigFont; 
         }
     }
     p{
-        color: rgb(218, 227, 235);
+        color: $textColor;
         margin-top: 0.3rem;
-        font-size: 1rem;
+        font-size: $smallFont;
         @include screenTablet{
-            font-size: 1.2rem; 
+            font-size: $midFont; 
         }
     }
     .skills{
     width: 95%;
         ul{
             li{
-                color: rgb(230, 17, 17);
+                color: $linkColor;
                 list-style-type: none;
                 display: inline-block;
                 margin: 0.4rem;
                 padding:0.2rem;
                 border-radius: 5px;
                 //border: 1px solid magenta;
-                background-color: aliceblue;
-                font-size: 0.8rem;
+                background-color: rgb(255, 255, 255);
+                font-size: $smallFont;
                 font-weight: 700;
-                box-shadow: 4px 3px 6px rgba(253, 38, 224, 0.6);
+                //box-shadow: 4px 3px 6px rgba(253, 38, 224, 0.4);
 
                 &:hover{
-                    background-color: black;
-                    color: yellow;
-                    box-shadow: 4px 3px 6px rgba(248, 244, 19, 0.6);
+                   // background-color: black;
+                   // color: yellow;
+                    //box-shadow: 4px 3px 6px rgba(248, 244, 19, 0.6);
                     //font-size: 0.9rem;
                 }
                 @include screenTablet{
@@ -83,7 +83,7 @@ body{
         p{
             width: 92%;
             text-align: justify;
-            text-shadow: 3px 1px 5px rgba(167,130,130,0.6);
+           // text-shadow: 3px 1px 5px rgba(102, 236, 84, 0.4);
            // border-bottom: 1px solid white;
            @include screenTablet{
             width: 89%;
@@ -108,25 +108,25 @@ body{
     }
     .education{
         margin-top: 2rem;
-        border-bottom: 1px solid white;
+        //border-bottom: 1px solid white;
         .educationLevel{
             //border: 1px solid magenta;
             margin-top: 0.4rem;
             padding: 0.3rem;
             h4{
-                color: rgb(255, 252, 252);
-                font-size: 1rem;
+                color: $textColor;
+                font-size: $midFont;
                 &:hover{
-                    color: yellow;
+                    //color: yellow;
                 }
                 @include screenTablet{
-                    font-size: 1.2rem;
+                    font-size: $midFont;
                 }
             }
             p{
-                font-size: 0.8rem;
+                font-size: $smallFont;
                 @include screenTablet{
-                    font-size: 1rem;
+                    font-size: $midFont;
                 }
             }
         }
@@ -134,23 +134,25 @@ body{
     .projects{
         margin-top: 2rem;
         width: 95%;
-        border-bottom: 1px solid white;
+        //border-bottom: 1px solid white;
         .project{
             margin-top: 0.4rem;
             padding: 0.3rem;
-            border-bottom: 1px dashed white;
+            background-color: rgb(250, 245, 245);
+            border-radius: 5px;
+            //border-bottom: 1px dashed white;
             h3{
                 margin-top: 0.6rem;
-                color: rgb(250, 234, 10);
-                text-shadow: 4px 3px 6px rgba(199, 201, 78, 0.6);
-                font-size: 1.2rem;
+                color: $headingColor;
+                //text-shadow: 4px 3px 6px rgba(199, 201, 78, 0.6);
+                font-size: $midFont;
                 @include screenTablet{
-                    font-size: 1.3rem;
+                    font-size:$bigFont;
                 }
             }
             p{
                 margin-top: 0.5rem;
-                font-size: 1rem;
+                font-size: $smallFont;
                 text-align: justify;
                 @include screenTablet{
                     font-size: 1.1rem;
@@ -165,9 +167,9 @@ body{
                     p{
                         margin: 0.6rem;
                         display: inline;
-                        color: rgb(239, 247, 247);
+                        color:rgb(48, 45, 45);
                         padding: 0.4rem;
-                        background-color: rgb(15, 15, 15);
+                        background-color: $accent1;
                         border-radius: 5px;
                     }
                 }
@@ -189,12 +191,12 @@ body{
             margin-bottom: 2rem;
         }
         label{
-            color: rgb(245, 239, 239);
+            color: $headingColor;
             display: block;
             margin-top: 1rem;
             margin-bottom: 1rem;
             @include screenTablet{
-                font-size: 1.1rem;
+                font-size: $midFont;
             }
         }
         input{
@@ -203,11 +205,11 @@ body{
             padding: 0.3rem;
             width: 90%;
             border: none;
-            font-size: 1rem;
+            font-size: $smallFont;
             height: 2.8rem;
             text-align: center;
             border-radius: 5px;
-            box-shadow: 4px 3px 6px rgba(124, 245, 11, 0.6);
+           // box-shadow: 4px 3px 6px rgba(124, 245, 11, 0.6);
             max-width: 28rem;
         }
         .inputText{
@@ -217,11 +219,11 @@ body{
             padding: 1rem;
             width: 90%;
             max-width: 28rem;
-            font-size: 1rem;
+            font-size: $smallFont;
             height: 25vh;
             border: none;
             border-radius: 5px;
-            box-shadow: 4px 3px 6px rgba(49, 248, 10, 0.6);
+            //box-shadow: 4px 3px 6px rgba(49, 248, 10, 0.6);
         }
         button{
             display: block;
@@ -231,16 +233,16 @@ body{
             width: 12rem;
             padding: 0.5rem 1.1rem 0.5rem 1.1rem;
             border-radius: 10px;
-            color: rgb(48, 51, 44);
-            background-color: rgb(184, 194, 174);
-            font-size: 1rem;
+            color: $textColor;
+            background-color: $accent1;
+            font-size: $smallFont;
             font-weight: 600;
-            box-shadow: 4px 3px 6px rgba(253, 38, 224, 0.6);
+            //box-shadow: 4px 3px 6px rgba(253, 38, 224, 0.6);
             margin: 0 auto;
             &:hover{
-                background-color: rgb(151, 167, 136);
-                color: rgb(240, 243, 38);
-                box-shadow: 4px 3px 6px rgba(229, 230, 225, 0.6);
+                //background-color: rgb(151, 167, 136);
+                //color: rgb(240, 243, 38);
+                //box-shadow: 4px 3px 6px rgba(229, 230, 225, 0.6);
             }
         }
     }

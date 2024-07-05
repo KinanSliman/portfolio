@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(18, 46, 11);
+  background-color: rgb(245, 242, 242);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
@@ -20,55 +20,47 @@ body {
   }
 }
 .app h1 {
-  color: rgb(239, 243, 247);
+  color: rgb(34, 40, 49);
   font-size: 1.4rem;
-  text-shadow: 3px 1px 5px rgba(51, 44, 44, 0.6);
 }
 @media screen and (min-width: 599px) {
   .app h1 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 .app h2 {
-  color: rgb(218, 227, 235);
+  color: rgb(34, 40, 49);
   margin-top: 0.8rem;
-  font-size: 1.5rem;
-  text-shadow: 3px 1px 5px rgba(167, 130, 130, 0.6);
+  font-size: 1.4rem;
 }
 @media screen and (min-width: 599px) {
   .app h2 {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 }
 .app p {
-  color: rgb(218, 227, 235);
+  color: rgb(57, 62, 70);
   margin-top: 0.3rem;
   font-size: 1rem;
 }
 @media screen and (min-width: 599px) {
   .app p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 .app .skills {
   width: 95%;
 }
 .app .skills ul li {
-  color: rgb(230, 17, 17);
+  color: rgb(16, 204, 214);
   list-style-type: none;
   display: inline-block;
   margin: 0.4rem;
   padding: 0.2rem;
   border-radius: 5px;
-  background-color: aliceblue;
-  font-size: 0.8rem;
+  background-color: rgb(255, 255, 255);
+  font-size: 1rem;
   font-weight: 700;
-  box-shadow: 4px 3px 6px rgba(253, 38, 224, 0.6);
-}
-.app .skills ul li:hover {
-  background-color: black;
-  color: yellow;
-  box-shadow: 4px 3px 6px rgba(248, 244, 19, 0.6);
 }
 @media screen and (min-width: 599px) {
   .app .skills ul li {
@@ -90,7 +82,6 @@ body {
 .app .introductionText p {
   width: 92%;
   text-align: justify;
-  text-shadow: 3px 1px 5px rgba(167, 130, 130, 0.6);
 }
 @media screen and (min-width: 599px) {
   .app .introductionText p {
@@ -113,51 +104,46 @@ body {
 }
 .app .education {
   margin-top: 2rem;
-  border-bottom: 1px solid white;
 }
 .app .education .educationLevel {
   margin-top: 0.4rem;
   padding: 0.3rem;
 }
 .app .education .educationLevel h4 {
-  color: rgb(255, 252, 252);
-  font-size: 1rem;
-}
-.app .education .educationLevel h4:hover {
-  color: yellow;
+  color: rgb(57, 62, 70);
+  font-size: 1.1rem;
 }
 @media screen and (min-width: 599px) {
   .app .education .educationLevel h4 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 .app .education .educationLevel p {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 @media screen and (min-width: 599px) {
   .app .education .educationLevel p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 .app .projects {
   margin-top: 2rem;
   width: 95%;
-  border-bottom: 1px solid white;
 }
 .app .projects .project {
   margin-top: 0.4rem;
   padding: 0.3rem;
-  border-bottom: 1px dashed white;
+  background-color: rgb(250, 245, 245);
+  border-radius: 5px;
 }
 .app .projects .project h3 {
   margin-top: 0.6rem;
-  color: rgb(250, 234, 10);
-  text-shadow: 4px 3px 6px rgba(199, 201, 78, 0.6);
-  font-size: 1.2rem;
+  color: rgb(34, 40, 49);
+  font-size: 1.1rem;
 }
 @media screen and (min-width: 599px) {
   .app .projects .project h3 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 .app .projects .project p {
@@ -181,9 +167,9 @@ body {
 .app .projects .project .projectLinks a p {
   margin: 0.6rem;
   display: inline;
-  color: rgb(239, 247, 247);
+  color: rgb(48, 45, 45);
   padding: 0.4rem;
-  background-color: rgb(15, 15, 15);
+  background-color: rgb(255, 165, 0);
   border-radius: 5px;
 }
 .app .sayHello {
@@ -197,7 +183,7 @@ body {
   margin-bottom: 2rem;
 }
 .app .sayHello label {
-  color: rgb(245, 239, 239);
+  color: rgb(34, 40, 49);
   display: block;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -217,7 +203,6 @@ body {
   height: 2.8rem;
   text-align: center;
   border-radius: 5px;
-  box-shadow: 4px 3px 6px rgba(124, 245, 11, 0.6);
   max-width: 28rem;
 }
 .app .sayHello .inputText {
@@ -231,7 +216,6 @@ body {
   height: 25vh;
   border: none;
   border-radius: 5px;
-  box-shadow: 4px 3px 6px rgba(49, 248, 10, 0.6);
 }
 .app .sayHello button {
   display: block;
@@ -241,15 +225,9 @@ body {
   width: 12rem;
   padding: 0.5rem 1.1rem 0.5rem 1.1rem;
   border-radius: 10px;
-  color: rgb(48, 51, 44);
-  background-color: rgb(184, 194, 174);
+  color: rgb(57, 62, 70);
+  background-color: rgb(255, 165, 0);
   font-size: 1rem;
   font-weight: 600;
-  box-shadow: 4px 3px 6px rgba(253, 38, 224, 0.6);
   margin: 0 auto;
-}
-.app .sayHello button:hover {
-  background-color: rgb(151, 167, 136);
-  color: rgb(240, 243, 38);
-  box-shadow: 4px 3px 6px rgba(229, 230, 225, 0.6);
 }/*# sourceMappingURL=style.css.map */

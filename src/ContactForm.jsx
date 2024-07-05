@@ -17,7 +17,7 @@ function ContactForm() {
           id="email"
           type="email"
           name="email"
-          placeholder="your-email@gmail.com for example"
+          placeholder="your-email@gmail.com"
           required
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
