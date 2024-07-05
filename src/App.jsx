@@ -87,6 +87,27 @@ function App() {
           </div>
         </div>
         <div className="project">
+          <h3># Data Scientist Portfolio</h3>
+          <p>
+            a portfolio for my brother, to show his skills in data analytics
+          </p>
+          <div className="skills">
+            <ul>
+              <li>HTML</li>
+              <li>SCSS</li>
+              <li>Javascript</li>
+            </ul>
+          </div>
+          <div className="projectLinks">
+            <a href="https://w-sliman.github.io/portfolio/">
+              <p>Live Demo</p>
+            </a>
+            <a href="https://github.com/w-sliman/portfolio">
+              <p>GitHub</p>
+            </a>
+          </div>
+        </div>
+        <div className="project">
           <h3># Shampoo Ecommerce</h3>
           <p>an online store to sell shampoo products</p>
           <div className="skills">
@@ -104,27 +125,6 @@ function App() {
               <p>Live Demo</p>
             </a>
             <a href="https://github.com/KinanSliman/Shampoo-Ecommerce">
-              <p>GitHub</p>
-            </a>
-          </div>
-        </div>
-        <div className="project">
-          <h3># Data Scientist Portfolio</h3>
-          <p>
-            a portfolio for my brother, to show his skills in data analytics
-          </p>
-          <div className="skills">
-            <ul>
-              <li>HTML</li>
-              <li>SCSS</li>
-              <li>Javascript</li>
-            </ul>
-          </div>
-          <div className="projectLinks">
-            <a href="https://w-sliman.github.io/portfolio/">
-              <p>Live Demo</p>
-            </a>
-            <a href="https://github.com/w-sliman/portfolio">
               <p>GitHub</p>
             </a>
           </div>

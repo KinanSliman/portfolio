@@ -11,8 +11,13 @@ body {
 
 .app {
   max-width: 50rem;
-  margin: 0 auto;
-  padding: 1rem;
+  margin: 1rem;
+}
+@media screen and (min-width: 599px) {
+  .app {
+    margin: 0 auto;
+    padding: 1rem;
+  }
 }
 .app h1 {
   color: rgb(239, 243, 247);
