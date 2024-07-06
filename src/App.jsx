@@ -10,10 +10,10 @@ function App() {
       <h2>Master's in Web Technologies</h2>
       <p>kin.as.sy@gmail.com</p>
       <div className="links">
-        <a href="https://www.linkedin.com/in/kinan-sliman">
+        <a href="https://www.linkedin.com/in/kinan-sliman" target="_blank">
           <img src={linkedinLogo} alt="linkedlin logo" />
         </a>
-        <a href="https://www.github.com/KinanSliman">
+        <a href="https://www.github.com/KinanSliman" target="_blank">
           <img className="githubLogoimg" src={gitHubLogo} alt="github logo" />
         </a>
       </div>
