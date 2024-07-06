@@ -6,12 +6,16 @@ function App() {
   return (
     <div className="app">
       <h1>Kinan Sliman</h1>
-      <h2>Frontend developer</h2>
-      <p>I build things for the web.</p>
+      <h2>Information and Communication Engineer,</h2>
+      <h2>Master's in Web Technologies</h2>
       <p>kin.as.sy@gmail.com</p>
       <div className="links">
-        <img src={linkedinLogo} alt="linkedlin logo" />
-        <img className="githubLogoimg" src={gitHubLogo} alt="github logo" />
+        <a href="www.github/KinanSliman">
+          <img src={linkedinLogo} alt="linkedlin logo" />
+        </a>
+        <a href="">
+          <img className="githubLogoimg" src={gitHubLogo} alt="github logo" />
+        </a>
       </div>
       <div className="skills">
         <ul>
@@ -26,14 +30,23 @@ function App() {
       </div>
       <div className="introductionText">
         <p>
-          When marimba rhythms start to play Dance with me, make me sway Like a
-          lazy ocean hugs the shore Hold me close, sway me more Like a flower
-          bending in the breeze Bend with me, sway with ease When we dance, you
-          have a way with me Stay with me, sway with me Other dancers may be on
-          the floor Dear, but my eyes will see only you Only you have that magic
-          technique When we sway, I go weak I can hear the sounds of violins
-          Long before it begins Make me thrill as only you know how Sway me
-          smooth, sway me now
+          Over the past year, I dedicated myself to completing my Master's
+          thesis. This challenging yet rewarding experience allowed me to tackle
+          numerous technical and conceptual problems, and I got a 95% grade and
+          high praise from both my supervisor and the thesis committee, which is
+          somthing I am very proud of.
+        </p>
+        <p>
+          Developing a full Blockchain from scratch provided an invaluable
+          opportunity to deepen my knowledge and explore various concepts and
+          technologies. This project involved working with networks, nodes,
+          servers, broadcasting, authentication, cryptography, and many other
+          cutting-edge technologies and it was fully written with JavaScript.
+        </p>
+        <p>
+          In addition to my thesis, I have worked on several other projects,
+          including building websites for various purposes. I have included the
+          code and live demos to showcase examples of my work.
         </p>
       </div>
 
@@ -78,10 +91,16 @@ function App() {
             </ul>
           </div>
           <div className="projectLinks">
-            <a href="https://www.youtube.com/watch?v=8FD0U1Xxr-c">
+            <a
+              href="https://www.youtube.com/watch?v=8FD0U1Xxr-c"
+              target="_blank"
+            >
               <p>Video Demo</p>
             </a>
-            <a href="https://github.com/KinanSliman/payment-system-using-blockchain">
+            <a
+              href="https://github.com/KinanSliman/payment-system-using-blockchain"
+              target="_blank"
+            >
               <p>GitHub</p>
             </a>
           </div>
@@ -99,10 +118,10 @@ function App() {
             </ul>
           </div>
           <div className="projectLinks">
-            <a href="https://w-sliman.github.io/portfolio/">
+            <a href="https://w-sliman.github.io/portfolio/" target="_blank">
               <p>Live Demo</p>
             </a>
-            <a href="https://github.com/w-sliman/portfolio">
+            <a href="https://github.com/w-sliman/portfolio" target="_blank">
               <p>GitHub</p>
             </a>
           </div>
@@ -121,10 +140,13 @@ function App() {
             </ul>
           </div>
           <div className="projectLinks">
-            <a href="https://shampoo-ecommercee.onrender.com/">
+            <a href="https://shampoo-ecommercee.onrender.com/" target="_blank">
               <p>Live Demo</p>
             </a>
-            <a href="https://github.com/KinanSliman/Shampoo-Ecommerce">
+            <a
+              href="https://github.com/KinanSliman/Shampoo-Ecommerce"
+              target="_blank"
+            >
               <p>GitHub</p>
             </a>
           </div>

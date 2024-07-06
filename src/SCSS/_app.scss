@@ -21,15 +21,16 @@ body{
     h1{
         color: $headingColor;
         font-size: $bigFont; 
+        margin-bottom: 0.5rem;
         //text-shadow: 3px 1px 5px rgba(51, 44, 44, 0.6);
         @include screenTablet{
-            font-size: $bigFont; 
+            font-size: $biggerFont; 
         }
     }
     h2{
         color: $headingColor;
-        margin-top: 0.8rem;
-        font-size: $bigFont;
+        margin-bottom: 0.2rem;
+        font-size: 1.1rem;
         //text-shadow: 3px 1px 5px rgba(212, 112, 112, 0.4);
         @include screenTablet{
             font-size: $bigFont; 
@@ -79,10 +80,14 @@ body{
     .introductionText{
         margin-top: 2rem;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         p{
             width: 92%;
             text-align: justify;
+            line-height: 1.8rem;
+            margin-bottom: 0.3rem;
+           // display: block;
            // text-shadow: 3px 1px 5px rgba(102, 236, 84, 0.4);
            // border-bottom: 1px solid white;
            @include screenTablet{
@@ -95,16 +100,18 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-
-        img{
-            width: 2.6rem;
-            height: auto;
-            border-radius: 20px;
+        a{
+            img{
+                width: 2.6rem;
+                height: auto;
+                border-radius: 20px;
+            }
+            .githubLogoimg{
+                width: 2rem;
+                //border: 1px solid magenta;
+            }
         }
-        .githubLogoimg{
-            width: 2rem;
-            //border: 1px solid magenta;
-        }
+       
     }
     .education{
         margin-top: 2rem;
