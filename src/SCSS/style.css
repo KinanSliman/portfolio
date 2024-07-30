@@ -141,6 +141,7 @@ body {
   }
 }
 .app .education .educationLevel ul li {
+  padding: 0.4rem;
   color: rgb(57, 62, 70);
 }
 .app .projects {
