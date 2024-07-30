@@ -172,10 +172,7 @@ function App() {
             <a href="https://realestate-3kxu.onrender.com" target="_blank">
               <p>Live Demo</p>
             </a>
-            <a
-              href="https://github.com/KinanSliman/Shampoo-Ecommerce"
-              target="_blank"
-            >
+            <a href="https://github.com/KinanSliman/RealEstate" target="_blank">
               <p>GitHub</p>
             </a>
           </div>
