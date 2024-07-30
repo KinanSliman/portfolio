@@ -131,6 +131,7 @@ body {
   }
 }
 .app .education .educationLevel ul {
+  margin-top: 1rem;
   list-style-type: disc;
   font-size: 1rem;
 }

@@ -137,6 +137,7 @@ body{
                 }
             }
             ul{
+                margin-top: 1rem;
                 list-style-type: disc;
                 font-size: $smallFont;
                 @include screenTablet{
