@@ -61,6 +61,31 @@ function App() {
           <p>Tartous University - 2020</p>
         </div>
       </div>
+
+      <div className="education">
+        <h2>Experience</h2>
+        <div className="educationLevel">
+          <h4>Freelance Web Developer, Syria</h4>
+          <p>February 2022 - September 2023</p>
+          <ul>
+            <li>
+              Developed and maintained dynamic web applications for clients.
+            </li>
+            <li>
+              Implemented robust front-end solutions using HTML, CSS, and
+              JavaScript.
+            </li>
+            <li>
+              Built and optimized backend systems utilizing PHP and MySQL.
+            </li>
+            <li>
+              Collaborated with clients to understand requirements and deliver
+              exceptional results.
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <div className="projects">
         <h2>Projects</h2>
         <div className="project">
@@ -127,20 +152,24 @@ function App() {
           </div>
         </div>
         <div className="project">
-          <h3># Shampoo Ecommerce</h3>
-          <p>an online store to sell shampoo products</p>
+          <h3># Real Estate website</h3>
+          <p>
+            Created a web application for a estate company for my portfolio.
+          </p>
           <div className="skills">
             <ul>
               <li>HTML</li>
               <li>SCSS</li>
-              <li>React js</li>
+              <li>
+                React (useState, useEffect, useRef, useContext, React Router)
+              </li>
               <li>Node js</li>
               <li>MongoDB</li>
               <li>Express</li>
             </ul>
           </div>
           <div className="projectLinks">
-            <a href="https://shampoo-ecommercee.onrender.com/" target="_blank">
+            <a href="https://realestate-3kxu.onrender.com" target="_blank">
               <p>Live Demo</p>
             </a>
             <a

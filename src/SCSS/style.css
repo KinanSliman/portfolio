@@ -130,6 +130,18 @@ body {
     font-size: 1.1rem;
   }
 }
+.app .education .educationLevel ul {
+  list-style-type: disc;
+  font-size: 1rem;
+}
+@media screen and (min-width: 599px) {
+  .app .education .educationLevel ul {
+    font-size: 1.1rem;
+  }
+}
+.app .education .educationLevel ul li {
+  color: rgb(57, 62, 70);
+}
 .app .projects {
   margin-top: 2rem;
   width: 95%;
