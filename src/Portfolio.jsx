@@ -190,22 +190,6 @@ export default function Portfolio() {
                 <div className="stat-label">Web Developer</div>
               </div>
             </div>
-
-            {/* Contact Chips */}
-            <div className="contact-chips">
-              <a href="mailto:email@gmail.com" className="contact-chip">
-                <Mail size={16} />
-                <span className="contact-chip-text">kin.as.sy@gmail.com</span>
-              </a>
-              <a href="tel:+963991031225" className="contact-chip">
-                <Phone size={16} />
-                <span className="contact-chip-text">+963991031225</span>
-              </a>
-              <div className="contact-chip">
-                <MapPin size={16} />
-                <span className="contact-chip-text">Syria, Tartous</span>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -416,22 +400,6 @@ export default function Portfolio() {
                 </p>
               </div>
             </div>
-
-            <div className="languages-card">
-              <h3 className="languages-title">Languages</h3>
-              <div className="languages-grid">
-                <div className="language-item">
-                  <div className="language-flag">🇸🇾</div>
-                  <div className="language-name highlight-purple">Arabic</div>
-                  <div className="language-level">Native</div>
-                </div>
-                <div className="language-item">
-                  <div className="language-flag">🌍</div>
-                  <div className="language-name highlight-cyan">English</div>
-                  <div className="language-level">Professional</div>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -463,9 +431,6 @@ export default function Portfolio() {
                 className="social-link"
               >
                 <Linkedin size={32} className="social-icon" />
-              </a>
-              <a href="mailto:email@gmail.com" className="social-link">
-                <Mail size={32} className="social-icon" />
               </a>
             </div>
           </div>
