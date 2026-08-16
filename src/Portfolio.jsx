@@ -2,19 +2,16 @@ import React, { useState, useEffect } from "react";
 import {
   Github,
   Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-  ExternalLink,
   Zap,
   Rocket,
   Sparkles,
   Brain,
   Coffee,
+  Briefcase,
+  Globe,
 } from "lucide-react";
 
 export default function Portfolio() {
-  const [activeSection, setActiveSection] = useState("intro");
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [terminalText, setTerminalText] = useState("");
   const [showCursor, setShowCursor] = useState(true);
@@ -52,60 +49,112 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "Blockchain Payment System",
-      subtitle: "https://www.youtube.com/watch?v=8FD0U1Xxr-c",
-      emoji: "⛓️",
+      title: "Virtual Store",
+      subtitle: "https://virtual-store-vert.vercel.app",
+      emoji: "🕹️",
       description:
-        "Master thesis, a Custom blockchain with cryptocurrency, wallet, and miner logic. Implemented SHA-256, ECC, and ECDSA for bulletproof security. Achieved ~30-second decentralized transactions.",
-      tech: ["Node.js", "PHP", "Web Sockets", "MySQL"],
-      gradient: "gradient-yellow-orange",
-      stat: "30s",
-      statLabel: "Transaction Time",
+        "A first-person 3D browser storefront built with React Three Fiber and procedural geometry — drag-to-look camera, collision detection, and mobile touch controls. Every catalogue row supplies its own artwork, price, and spatial position, so the shop is database-driven with no hardcoded 3D geometry. Solved WebGL's Latin-only font limitation with canvas-rasterised textures to render correctly shaped, right-to-left Arabic text in 3D space, and a transactional checkout that snapshots unit prices to preserve historical order integrity.",
+      tech: [
+        "Next.js 16",
+        "TypeScript",
+        "React Three Fiber",
+        "PostgreSQL (Neon)",
+        "Drizzle ORM",
+        "Tailwind CSS",
+        "Recharts",
+        "Vitest",
+      ],
+      gradient: "gradient-blue-purple",
+      stat: "Arabic in 3D",
+      statLabel: "RTL Text Rendering in WebGL",
+    },
+    {
+      title: "Markdly",
+      subtitle: "https://markdly.vercel.app",
+      emoji: "📝",
+      description:
+        "A SaaS I built, launched, and operate: it syncs Google Docs to GitHub as Markdown via automated pull requests, with dual OAuth (Google + GitHub), token refresh, and a six-stage conversion pipeline running in production today. One converter covers both the Google Docs API and .docx uploads, and SHA-256 change detection cut unnecessary API calls by roughly 70%. Hardened for real traffic with token-bucket rate limiting, exponential-backoff retries, and Redis caching — plus CI/CD, an admin dashboard with real-time monitoring and threshold alerting, and a test suite that gates every release.",
+      tech: [
+        "Next.js",
+        "NestJS",
+        "TypeScript",
+        "PostgreSQL",
+        "Redis",
+        "Drizzle ORM",
+        "GitHub API",
+        "Google Docs API",
+        "Cloudinary",
+      ],
+      gradient: "gradient-green-teal",
+      stat: "10–100×",
+      statLabel: "Faster Cached Conversions",
     },
     {
       title: "Live Wildfire Tracker",
-      subtitle: "https://live-fire-tracker.onrender.com/",
+      subtitle: "https://livewildfiretracker.onrender.com",
       emoji: "🔥",
       description:
-        "Global wildfire tracking platform using NASA's FIRMS API. Interactive 2D/3D map layers with MapLibreGL JS. Redux Toolkit powering real-time updates.",
-      tech: ["React", "Redux Toolkit", "NASA API", "MapLibreGL"],
+        "Sustains a live browser feed of 20,000+ active fire detections over WebSockets — push-based delivery with no client polling, refreshed on a 3-hour ingestion cycle across 52 global regions. Interactive MapLibre GL map with a 3D globe projection and four 2D tile styles, severity filtering, and click-through detail backed by cached OSM reverse geocoding.",
+      tech: [
+        "React 19",
+        "TypeScript",
+        "Redux Toolkit",
+        "MapLibre GL",
+        "Node.js",
+        "ws",
+        "MongoDB Atlas",
+        "NASA FIRMS API",
+      ],
       gradient: "gradient-red-pink",
-      stat: "Global",
-      statLabel: "Coverage",
-    },
-    {
-      title: "Vintage Clothing eCommerce",
-      subtitle: "https://vintageclothing.onrender.com/",
-      emoji: "👔",
-      description:
-        "Feature-rich SPA with smart filtering and persistent cart. Massive performance optimization. Secure REST APIs with full CRUD.",
-      tech: ["React", "Redux", "Node.js", "MongoDB"],
-      gradient: "gradient-green-teal",
-      stat: "Fast",
-      statLabel: "Load Time",
-    },
-    {
-      title: "Real Estate Portal",
-      subtitle: "https://realestate-3kxu.onrender.com/",
-      emoji: "🏠",
-      description:
-        "Dynamic property management platform with advanced search and filters. Responsive UI with structured backend logic.",
-      tech: ["React", "Node.js", "Express", "MongoDB"],
-      gradient: "gradient-blue-purple",
-      stat: "CRUD",
-      statLabel: "Operations",
+      stat: "20K+",
+      statLabel: "Live Fire Detections",
     },
   ];
 
-  const skills = [
-    { name: "React", level: 95, icon: "⚛️" },
-    { name: "Node.js", level: 92, icon: "🟢" },
-    { name: "MongoDB", level: 88, icon: "🍃" },
-    { name: "Redux", level: 90, icon: "🔄" },
-    { name: "Express", level: 89, icon: "🚂" },
-    { name: "JavaScript", level: 96, icon: "💛" },
-    { name: "Web Sockets", level: 85, icon: "🔌" },
-    { name: "REST APIs", level: 93, icon: "🌐" },
+  const skillGroups = [
+    {
+      title: "Frontend",
+      items: [
+        { name: "React", icon: "⚛️" },
+        { name: "Next.js", icon: "▲" },
+        { name: "TypeScript", icon: "🔷" },
+        { name: "JavaScript", icon: "💛" },
+        { name: "Tailwind CSS", icon: "🌊" },
+        { name: "SASS/SCSS", icon: "💅" },
+        { name: "HTML5", icon: "🌐" },
+        { name: "PWA", icon: "📱" },
+      ],
+    },
+    {
+      title: "Backend",
+      items: [
+        { name: "Node.js", icon: "🟢" },
+        { name: "NestJS", icon: "🐱" },
+        { name: "REST APIs", icon: "🔗" },
+        { name: "WebSockets", icon: "🔌" },
+        { name: "JWT Auth", icon: "🔐" },
+        { name: "OAuth 2.0", icon: "🛡️" },
+        { name: "Rate Limiting", icon: "🚦" },
+        { name: "Caching", icon: "⚡" },
+      ],
+    },
+    {
+      title: "Data & Infrastructure",
+      items: [
+        { name: "PostgreSQL", icon: "🐘" },
+        { name: "MongoDB", icon: "🍃" },
+        { name: "MySQL", icon: "🗄️" },
+        { name: "Drizzle ORM", icon: "💧" },
+        { name: "Redis", icon: "🧱" },
+        { name: "Docker", icon: "🐳" },
+        { name: "Git", icon: "📚" },
+        { name: "CI/CD", icon: "🔁" },
+        { name: "Vercel", icon: "🚀" },
+        { name: "Render", icon: "🌍" },
+        { name: "Jest", icon: "🃏" },
+        { name: "Vitest", icon: "✅" },
+      ],
+    },
   ];
 
   return (
@@ -152,7 +201,7 @@ export default function Portfolio() {
                   </span>
                 </div>
                 <div className="terminal-subtext">
-                  Building innovative solutions...
+                  Shipping and operating production web apps...
                 </div>
               </div>
             </div>
@@ -161,33 +210,34 @@ export default function Portfolio() {
             <div className="name-title">
               <h1 className="name-gradient">KINAN SLIMAN</h1>
               <h2 className="subtitle">
-                Full Stack <span className="highlight-purple">Architect</span>
+                Full Stack <span className="highlight-purple">Developer</span>
               </h2>
               <p className="description">
-                Building the future with{" "}
-                <span className="highlight-purple">MERN</span> stack,
+                Shipping <span className="highlight-purple">end to end</span>{" "}
+                with Next.js and NestJS —
                 <span className="highlight-pink"> real-time systems</span> and
-                <span className="highlight-cyan"> more</span>
+                <span className="highlight-cyan"> Arabic-first, RTL-correct</span>{" "}
+                interfaces
               </p>
             </div>
 
             {/* Quick Stats */}
             <div className="stats-grid">
               <div className="stat-card stat-card-pink">
-                <div className="stat-number stat-number-pink">Master's</div>
+                <div className="stat-number stat-number-pink">M.Sc.</div>
                 <div className="stat-label">Web Technologies</div>
               </div>
               <div className="stat-card stat-card-purple">
-                <div className="stat-number stat-number-purple">ICT</div>
-                <div className="stat-label">Engineer</div>
+                <div className="stat-number stat-number-purple">B.Sc.</div>
+                <div className="stat-label">ICT Engineer</div>
               </div>
               <div className="stat-card stat-card-cyan">
-                <div className="stat-number stat-number-cyan">MERN</div>
-                <div className="stat-label">Full Stack Developer</div>
+                <div className="stat-number stat-number-cyan">RTL</div>
+                <div className="stat-label">Arabic-First Interfaces</div>
               </div>
               <div className="stat-card stat-card-green">
-                <div className="stat-number stat-number-green">Freelance</div>
-                <div className="stat-label">Web Developer</div>
+                <div className="stat-number stat-number-green">Solo</div>
+                <div className="stat-label">Build, Deploy &amp; Operate</div>
               </div>
             </div>
           </div>
@@ -209,15 +259,18 @@ export default function Portfolio() {
                   <h3 className="text-2xl font-bold">The Mind</h3>
                 </div>
                 <p className="card-description">
-                  Detail-oriented Full Stack Developer with a Master's in Web
-                  Technologies, specializing in the MERN stack. I architect
-                  scalable applications, real-time data systems, and
-                  user-focused interfaces.
+                  Full stack developer who ships and operates production web
+                  applications end to end — architecture, database design,
+                  security, deployment, and monitoring. Native Arabic speaker
+                  specializing in Arabic-first, RTL-correct interfaces, down to
+                  the layout details most libraries get wrong. Experienced with
+                  AI-augmented development workflows gated by review and
+                  automated tests.
                 </p>
                 <div className="flex gap-2 flex-wrap">
-                  <span className="additional-tech-tag">Problem Solver</span>
-                  <span className="additional-tech-tag">Optimizer</span>
-                  <span className="additional-tech-tag">Innovator</span>
+                  <span className="additional-tech-tag">Architect</span>
+                  <span className="additional-tech-tag">Operator</span>
+                  <span className="additional-tech-tag">RTL Specialist</span>
                 </div>
               </div>
 
@@ -243,8 +296,8 @@ export default function Portfolio() {
                       size={20}
                     />
                     <p className="card-description">
-                      Built full-stack applications with real-time data
-                      visualizations and eCommerce platforms
+                      Built and launched a production SaaS — OAuth, conversion
+                      pipeline, monitoring, and alerting included
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
@@ -257,8 +310,8 @@ export default function Portfolio() {
                       size={20}
                     />
                     <p className="card-description">
-                      Delivered end-to-end solutions: frontend, backend, and API
-                      integration
+                      Rendered right-to-left Arabic text inside WebGL, where the
+                      standard libraries fail outright
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
@@ -271,11 +324,54 @@ export default function Portfolio() {
                       size={20}
                     />
                     <p className="card-description">
-                      Freelancing since 2020, crafting scalable software
-                      solutions
+                      Streamed 20,000+ live wildfire detections to the browser
+                      over WebSockets, with zero client polling
                     </p>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Experience Section */}
+        <section className="section">
+          <div className="section-container">
+            <h2 className="section-title">
+              <span className="title-gradient title-gradient-pink-purple">
+                EXPERIENCE
+              </span>
+            </h2>
+
+            <div className="card">
+              <div className="flex items-center gap-3 mb-4">
+                <Briefcase style={{ color: "#ec4899" }} size={32} />
+                <div>
+                  <h3 className="card-title">
+                    Independent Full Stack Developer
+                  </h3>
+                  <p className="card-subtitle">
+                    Self-directed product work · Remote · July 2025 – Present
+                  </p>
+                </div>
+              </div>
+              <p className="card-description">
+                Design, build, deploy, and operate web products solo — market
+                research, architecture, UI/UX, schema design, backend,
+                deployment, and iteration — across SaaS, PWA, and real-time data
+                platforms.
+              </p>
+              <p className="card-description">
+                Deliver bilingual English/Arabic interfaces with full RTL
+                mirroring, including cases where standard libraries fail
+                outright: text shaping, bidirectional layout, and font fallback
+                in WebGL.
+              </p>
+              <div className="tech-tags">
+                <span className="tech-tag">SaaS</span>
+                <span className="tech-tag">PWA</span>
+                <span className="tech-tag">Real-Time Data</span>
+                <span className="tech-tag">Bilingual EN/AR</span>
               </div>
             </div>
           </div>
@@ -301,6 +397,7 @@ export default function Portfolio() {
                       className="card-subtitle"
                       href={project.subtitle}
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       {project.subtitle}
                     </a>
@@ -335,35 +432,22 @@ export default function Portfolio() {
               </span>
             </h2>
 
-            <div className="skills-grid-compact">
-              {skills.map((skill, idx) => (
-                <div key={idx} className="skill-card-compact">
-                  <div className="skill-icon-compact">{skill.icon}</div>
-                  <span className="skill-name-compact">{skill.name}</span>
+            {skillGroups.map((group) => (
+              <div key={group.title}>
+                <h3 className="additional-skills-title">{group.title}</h3>
+                <div className="skills-grid-compact">
+                  {group.items.map((skill) => (
+                    <div key={skill.name} className="skill-card-compact">
+                      <div className="skill-icon-compact">{skill.icon}</div>
+                      <span className="skill-name-compact">{skill.name}</span>
+                    </div>
+                  ))}
                 </div>
-              ))}
-
-              {/* More Tech Skills */}
-              {[
-                { name: "HTML5", icon: "🌐" },
-                { name: "CSS3", icon: "🎨" },
-                { name: "SASS/SCSS", icon: "💅" },
-                { name: "JWT", icon: "🔐" },
-                { name: "Git", icon: "📚" },
-                { name: "GitHub", icon: "🐙" },
-                { name: "Webpack", icon: "📦" },
-                { name: "MySQL", icon: "🗄️" },
-                { name: "PHP", icon: "🐘" },
-                { name: "Responsive Design", icon: "📱" },
-              ].map((tech, i) => (
-                <div key={`more-tech-${i}`} className="skill-card-compact">
-                  <div className="skill-icon-compact">{tech.icon}</div>
-                  <span className="skill-name-compact">{tech.name}</span>
-                </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </section>
+
         {/* Education Section */}
         <section className="section">
           <div className="section-container">
@@ -378,26 +462,50 @@ export default function Portfolio() {
                 <div className="education-header">
                   <Sparkles style={{ color: "#c084fc" }} size={24} />
                   <h3 className="education-title">
-                    Master's in Web Technologies
+                    M.Sc. in Web Technologies
                   </h3>
                 </div>
                 <p className="education-institution">
                   Syrian Virtual University
                 </p>
                 <p className="education-period education-period-purple">
-                  2020–2024
+                  2021–2025
                 </p>
               </div>
 
               <div className="education-card education-card-cyan">
                 <div className="education-header">
                   <Coffee style={{ color: "#22d3ee" }} size={24} />
-                  <h3 className="education-title">Bachelor's in ICT</h3>
+                  <h3 className="education-title">
+                    B.Sc. in Information &amp; Communication Technology
+                  </h3>
                 </div>
                 <p className="education-institution">Tartous University</p>
                 <p className="education-period education-period-cyan">
-                  2013–2020
+                  2014–2021
                 </p>
+              </div>
+            </div>
+
+            {/* Languages */}
+            <div className="languages-card">
+              <h3 className="languages-title">
+                <span className="flex items-center gap-2 justify-center">
+                  <Globe style={{ color: "#22d3ee" }} size={22} />
+                  Languages
+                </span>
+              </h3>
+              <div className="languages-grid">
+                <div className="language-item">
+                  <div className="language-flag">🗣️</div>
+                  <div className="language-name">Arabic</div>
+                  <div className="language-level">Native</div>
+                </div>
+                <div className="language-item">
+                  <div className="language-flag">🌐</div>
+                  <div className="language-name">English</div>
+                  <div className="language-level">Fluent</div>
+                </div>
               </div>
             </div>
           </div>
@@ -439,7 +547,7 @@ export default function Portfolio() {
         {/* Footer */}
         <footer className="footer">
           <p>
-            © 2025 Kinan Sliman — Coded with{" "}
+            © 2026 Kinan Sliman — Coded with{" "}
             <span style={{ color: "#ec4899" }}>♥</span> and{" "}
             <span style={{ color: "#eab308" }}>☕</span>
           </p>
